@@ -17,10 +17,25 @@ public class InstanceOfDemo {
     public static void main(String[] args) {
         Parent obj1 = new Parent();
         Parent obj2 = new Child();
+        
+        System.out.println("obj1 is instanseof Parent: "
+                + (obj1 instanceof Parent));
+        System.out.println("obj1 is instanseof Child: "
+                + (obj1 instanceof Child));
+        System.out.println("obj1 is instanseof MyInterface: "
+                + (obj1 instanceof MyInterface));
+        System.out.println("obj1 is instanseof Parent: "
+                + (obj2 instanceof Parent));
+        System.out.println("obj1 is instanseof Child: "
+                + (obj2 instanceof Child));
+        System.out.println("obj1 is instanseof MyInterface: "
+                + (obj2 instanceof MyInterface));
     }
     
+    
+    
+}
+
     class Parent{}
     class Child extends Parent implements MyInterface{}
     interface MyInterface{}
-    
-}
